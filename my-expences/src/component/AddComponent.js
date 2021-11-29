@@ -28,7 +28,7 @@ export default function AddComponent() {
     function handleSubmit(event) {
         event.preventDefault();
         let name = {}
-        fetch('http://127.0.0.1:8000/api/add_expences',{
+        fetch('api/add_expences',{
                 method:'POST',
                 body: JSON.stringify({"subject":event.target[0].value,
                     "date":value,

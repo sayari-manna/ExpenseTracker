@@ -16,7 +16,7 @@ export default function FilterData(){
 
     // 3. Create out useEffect function
     React.useEffect(() => {
-        fetch("http://127.0.0.1:8000/api/show_expences",{
+        fetch("api/show_expences",{
             method:'GET',
             headers:{
             'accept':'application/json',
